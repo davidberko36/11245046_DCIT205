@@ -1,0 +1,28 @@
+<style>
+.department-symbol{
+    display:inline-block;
+    width:400px;
+    vertical-align: top;
+    margin-right:600px;
+    margin-top:50px;
+}
+
+.top-button{
+    background-color:rgb(3, 8, 44);
+    color: #ffc800;
+    width: 85px;
+    height: 25px;
+    border-radius: 12px;
+    margin-top:50px;
+    transition:opacity, 0.7s
+}
+
+.top-button:hover{
+    opacity:0.7;
+    cursor: pointer;
+}
+
+.top-button:active{
+    opacity:0.3;
+}
+</style>
