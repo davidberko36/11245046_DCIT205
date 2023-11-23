@@ -9,10 +9,10 @@
                 display:inline-block;
                 width:400px;
                 vertical-align: top;
-                margin-right:500px;
+                margin-right:600px;
                 margin-top:50px;
             }
-
+            
             .top-button{
                 background-color:rgb(3, 8, 44);
                 color: #ffc800;
@@ -22,20 +22,29 @@
                 margin-top:50px;
                 transition:opacity, 0.7s
             }
-
+            
             .top-button:hover{
                 opacity:0.7;
                 cursor: pointer;
             }
-
+            
             .top-button:active{
                 opacity:0.3;
             }
 
-            .Searchbar{
-                margin-top: 500px;
+            .top-part{
+                width:1500px;
+                height:75px;
+                background-color: rgb(10, 10, 85);
+
             }
-        </style>
+            .heading{
+                margin-left:300px;
+                size: 500px;
+                font-size:45px;
+                color:white;
+            }
+            </style>
     </head>
     <body>
         <div class="page-top">
@@ -45,26 +54,12 @@
             <button class="top-button">Alumni</button>
             <button class="top-button">Research</button>
             <button class="top-button">News</button>
-            <button class="top-button">About</button>
         </div>
 
-    <div class="upper-centre">
-        <p>Please select your level to see your courses</p>
-        <select name="Undergrad-courses">
-            <option value="">Select your level</option>
-            <option value="Level 100">Level 100</option>
-            <option value="Level 200">Level 200</option>
-            <option value="Level 300">Level 300</option>
-            <option value="Level 400">Level 400</option>
-        </select>
-        <select name="Masters-courses">
-            <option value="MPhil">MPhil</option>
-            <option value="MSc.">MSc.</option>
-        </select>
-    </div>    
-        <div class="page-centre">
-            <input class="Searchbar" type="text" placeholder="Search for Past Papers">
+        <div class="top-part">
+            <p class="heading">
+                About The Department of Computer Science
+            </p>
         </div>
-        
+
     </body>
-</html>
