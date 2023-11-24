@@ -1,14 +1,20 @@
 <style>
+.top-buttons{
+    display: inline-block;
+    margin-top: 500px;
+    vertical-align:top;
+}
+
 .department-symbol{
     display:inline-block;
-    width:50px;
+    width:400px;
     vertical-align: top;
     margin-right:600px;
     margin-top:50px;
 }
 
 .top-button{
-    background-color:rgb(3, 8, 44);
+    background-color:rgb(10, 10, 85);
     color: #ffc800;
     width: 85px;
     height: 25px;
@@ -24,5 +30,12 @@
 
 .top-button:active{
     opacity:0.3;
+}
+
+.top-part{
+    width:1500px;
+    margin-left:0px;
+    height:75px;
+    background-color: rgb(10, 10, 85);
 }
 </style>
