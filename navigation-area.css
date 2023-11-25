@@ -38,4 +38,11 @@
     height:75px;
     background-color: rgb(10, 10, 85);
 }
+
+.heading{
+    color:white;
+    font-size:45px;
+    margin-left:250px;
+}
+
 </style>
