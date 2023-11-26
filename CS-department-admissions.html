@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            UG | Department of Computer Science
+        </title>
+        <link rel="stylesheet" href="navigation-area.css">
+        <style>
+            .lower-button{
+                width:85px;
+                height:25px;
+                border-radius:12px;
+                background-color: rgb(10,10,85);
+                 color:white;
+                 transition:opacity,0.3s;
+                 margin-left:500px;
+            }
+
+            .lower-button:hover{
+                opacity:0.7;
+            }
+            .lower-button:active{
+                opacity:0.3;
+            }
+
+            .dropdown {
+            background-color: rgba(27, 68, 190, 0.875);
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            }
+
+           .active, .dropdown:hover {
+            background-color: #322f6f;
+            }
+
+           .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="top-buttons">
+            <img class="department-symbol" src="Pictures/comScience_logo.png">
+            <button class="top-button">Home</button>
+            <button class="top-button">Faculty</button>
+            <button class="top-button">Alumni</button>
+            <button class="top-button">Students</button>
+            <button class="top-button">News</button>
+        </div>
+        <div class="top-part">
+            <p class="short-heading">
+                Admissions
+            </p>
+        </div>
+        <div>
+            <img src="" class="">
+            <p class="intro">
+                 Welcome to the vibrant and innovative Computer Science Department at the University of Ghana,
+                 where limitless possibilities intersect with cutting-edge technology. 
+                 Our department prides itself on offering two dynamic undergraduate programs: the BSc. in Computer Science and the BSc. in Information Technology.
+                 Through a holistic approach to education, we foster an environment where theoretical understanding meets hands-on experience,
+                  equipping our students with the skills and knowledge needed to thrive in the ever-evolving world of technology.
+                 Join us as we explore the forefront of digital innovation, inspiring the next generation of tech leaders and problem solvers.
+            </p>
+            <button class="lower-button">Apply</button>
+        </div>
+
+        <div>
+          <p class="CourseTitle">
+            &#8226 <strong>Requirements For Admission</strong>
+          </p>
+
+          <button type="button" class="dropdown">
+              Computer Science
+          </button>
+
+          <div class="content">
+              <p>
+                Students must have taken the WASSCE and obtained an aggregate 10
+                with at least a B3 in Elective Mathematics
+              </p>
+          </div>
+        </div>
+
+        <script>
+            var coll = document.getElementsByClassName("dropdown");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+        </script>
+
+    </body>
+</html>
