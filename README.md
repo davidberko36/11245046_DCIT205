@@ -90,9 +90,14 @@ To view the website locally:
 
 Through this project, I have gained insights into:
  **HTML Structure**: Understanding the structure and layout of a multi-page website.
+ 
  **CSS Styling**: Implementing styles to recreate the visual appearance of an existing site.
+ 
  **Basic JavaScript**: Creating basic things such as drop-down menus using JavaScript
+ 
  **Project Organization**: Managing multiple pages abd resources within a project.
+
+ **Git and GitHub**: Due to this project, I have mastered the fundamentals of Git and Github
 
 This project provided practical experience in web development and helped in honing skills related to front-end technologies.
 
