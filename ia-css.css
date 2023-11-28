@@ -118,6 +118,16 @@ body{
     width: 250px;
     font-style:normal;
 }
+.text5{
+    position:absolute;
+    top:1465px;
+    left:800px;
+    z-index:2;
+    color:rgb(4, 28, 61);
+    font-size:15px;
+    width:250px;
+    font-style:normal;
+}
 .text4{
     position: absolute;
     left:10px;

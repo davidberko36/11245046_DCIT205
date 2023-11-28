@@ -56,6 +56,18 @@
     width:1500px;
     height:200px;
     margin-top:50px;
+    color:white;
+}
+
+.footer-left{
+    display:inline-block;
+    margin-left:30px;
+}
+
+.footer-right{
+    display: inline-block;
+    margin-left:500px;
+    vertical-align:top;
 }
 
 </style>

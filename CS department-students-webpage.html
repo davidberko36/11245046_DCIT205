@@ -5,6 +5,7 @@
         <title>
             UG | Department of Computer Science
         </title>
+        <link rel="stylesheet" href="navigation-area.css">
         <style>
             .department-symbol{
                 display:inline-block;
@@ -33,9 +34,58 @@
                 opacity:0.3;
             }
 
-            .Searchbar{
-                margin-top: 500px;
+            .idk{
+                margin-top: 50px;
+                margin-left: 150px;
+                color:#322f6f;
             }
+
+            .Searchbar{
+                margin-top: 30px;
+                margin-left: 200px;
+            }
+
+            .sub-heading{
+                margin-left:500px;
+                font-size:30px;
+                color:rgb(10,10,85);
+            }
+
+            .text{
+                margin-left:400px;
+                width:520px;
+                font-size:25px;
+            }
+
+            .spec-sheet{
+                margin-left:300px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            .collapsible {
+                background-color: rgb(27, 68, 190);
+                color: white;
+                cursor: pointer;
+                padding: 18px;
+                width: 900px;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+            }
+
+            .active, .collapsible:hover {
+                background-color: #322f6f;
+            }
+
+            .content {
+                padding: 0 18px;
+                width: 850px;
+                display: none;
+                overflow: hidden;
+                background-color: #f1f1f1;                
+            }
+
         </style>
     </head>
     <body>
@@ -49,23 +99,357 @@
             <button class="top-button">About</button>
         </div>
 
-    <div class="upper-centre">
-        <p>Please select your level to see your courses</p>
-        <select name="Undergrad-courses">
-            <option value="">Select your level</option>
-            <option value="Level 100">Level 100</option>
-            <option value="Level 200">Level 200</option>
-            <option value="Level 300">Level 300</option>
-            <option value="Level 400">Level 400</option>
-        </select>
-        <select name="Masters-courses">
-            <option value="MPhil">MPhil</option>
-            <option value="MSc.">MSc.</option>
-        </select>
-    </div>    
+        <div class="top-part">
+            <p class="heading">
+                Students
+            </p>
+        </div>
+
+        <p class="sub-heading">
+            Undergraduate Degree Programmes
+        </p>
+
+        <p class="text">
+            Here at DCS, we run two programmes, Computer Science and Information Technology. To 
+            qualify for Computer Science in Level 200, students must take MATH 121, MATH 123 and DCIT 101.
+        </p>
+        <p class="spec-sheet">
+            <h2>Computer Requirements</h2>
+            Each student must own a laptop with at least the following specifications:
+            <li>Intel core i3 64-bit CPU</li>
+            <li>8gb of DDR4 RAM</li>
+            <li>512gb of SSD </li>
+        </P>
+
+
+        <div>
+
+            <button type="button" class="collapsible">
+                Computer Science Course List
+            </button>
+
+            <div class="content">
+                <button type="button" class="collapsible">
+                    Level 100
+                </button>
+                <div class="content">
+                    <p>                    
+                            <h2>First Semester</h2>
+                            <li>UGRC 110 Academic Writing I</li>
+                            <li>DCIT 101 Introduction to Computer Science</li>
+                            <li>DCIT 103 Office Productivity Tools</li>
+                            <li>MATH 121 Algebra and Trigonometry</li>
+                            <li>MATH 123 Vectors and Geometry</li>
+                            <li>STAT 111 Introduction to Statistics and Probability</li>                        
+                                       
+                    </p>
+                    <p>
+                      <h2>Second Semester</h2>
+                      <li>DCIT 102 Computer Hardware Fundamentals and Circuits</li>
+                      <li>DCIT 104 Programming Fundamentals</li>
+                      <li>MATH 122 Calculus I</li>
+                      <li>MATH 126 Algebra and Geometry</li>                      
+                      <li>STAT 112 Introduction to Statistics and Probability II</li>
+                      <li>UGRC 150 Critical Thinking and Practical Reasoning</li>
+                     
+
+                    </p>
+                </div>
+                <button type="button" class="collapsible">
+                    Level 200
+                </button>
+                <div class="content">
+                    <p>
+                        <h2>First Semester</h2>
+                        <li>UGRC 210 Academic Writing II</li>
+                        <li>DCIT 201 Programming I</li>
+                        <li>DCIT 203 Digital and Logic Systems Design</li>
+                        <li>DCIT 205 Multimedia and Web Design</li>
+                        <li>DCIT 207 Computer Organization and Architecture</li>
+                        <li>MATH 223 Calculus II</li>
+                                        
+                           
+                
+                    </p>
+                    <p>
+                      <h2>Second Semester</h2>
+                      <li>UGRC 220 Introduction to African Studies</li>   
+                      <li>DCIT 202 Mobile Application Development</li>
+                      <li>DCIT 204 Data Structures & Algorithm I</li>
+                      <li>DCIT 206 Systems Administration</li>
+                      <li>DCIT 208 Software Engineering</li>
+
+                        
+                      <h2>Electives</h2>
+                      <li>DCIT 200 Internship</li>
+                      <li>DCIT 212 Numerical and Computational Methods</li>
+                      <li>DCIT 214 Information Modeling and Specification</li>
+
+                    </p>
+                </div>
+                <button type="button" class="collapsible">
+                     Level 300
+                </button>
+                <div class="content">
+                    <p>
+                        <h2>First Semester</h2>
+                        <li>DCIT 301 Operating Systems</li>
+                        <li>DCIT 303 Computer Networks</li>
+                        <li>DCIT 305 Database Fundamentals</li>
+                        <li>DCIT 313 Introduction to Artificial Intelligence</li>
+                        <li>MATH 359 Discrete Mathematics</li>
+                        Electives:
+                        <li>DCIT 307 Mini-Project</li>
+                        <li>DCIT 309 Embedded Systems and IoT</li>
+                        <li>DCIT 311 Machine Learning</li>
+                    </p>
+                    <p>
+                        <h2>Second Semester</h2>
+                        <li>DCIT 302 Human Computer Interaction</li>
+                        <li>DCIT 304 Research Methods</li>
+                        <li>DCIT 308 Data Structures and Algorithms II</li>
+                        <li>DCIT 312 Information Security Management</li>
+                        <li>DCIT 318 Programming II</li>
+                        Electives:
+                        <li>DCIT 306 Cloud Computing</li>
+                        <li>DCIT 316 Computational models for Social Media Mining</li>
+                    </p>
+                </div>
+                <button type="button" class="collapsible">
+                    Level 400
+                </button>
+                <div class="content">
+                    <p>
+                        <h2>First Semester</h2>
+                        <li>DCIT 400 Project</li>
+                        <li>DCIT 401 Social, Legal, Ethical and Professional Issues</li>
+                        <li>DCIT 407 Image Processing</li>
+
+                        <h2>Electives</h2>
+                        <li>DCIT 403  Designing Intelligent Agents</li>
+                        <LI>DCIT 405 Statistical Models and Methods for Data Science</LI>
+                        <li>DCIT 411 Bioinformatics</li>
+                        <li>DCIT 417 Network and Performance Analysis Modeling</li>
+                        <li>DCIT 423 Network Servers and Infrastructure</li>
+                                              
+                        
+                    </p>
+                    <p>
+                        <h2>Second Semester</h2>
+                        <li>DCIT 400 Project</li>
+                        <li>DCIT 402 Management Principles in Computing</li>
+                        <LI>DCIT 418 Systems and Network Security </LI>
+                        <LI>DCIT 428 Wireless Systems and Networks</LI>
+                        <h2>Electives</h2>
+                        <li>DCIT 404 Advanced Databases</li>
+                        <li>DCIT 406 Advanced Computer Networks</li>
+                        <li>DCIT 408 Compilers</li>
+                        <li>DCIT 426 Telecommunication Systems</li>
+                        <li>DCIT 412 Computer Vision</li>
+                        <li>DCIT 414 Data Mining and Warehousing</li>
+                        <li>DCIT 416 Digital Signal Processing</li>
+                        <li>DCIT 422 Information Visualization</li>
+                    </p>
+                </div>
+            </div>
+           
+
+        </div>
+
+        <div>
+
+            <button type="button" class="collapsible">
+                Information Technology Course List
+            </button>
+
+            <div class="content">
+                <button type="button" class="collapsible">
+                    Level 100
+                </button>
+                <div class="content">
+                    <p>                    
+                            <h2>First Semester</h2>
+                            <li>UGRC 110 Academic Writing I</li>
+                            <li>DCIT 101 Introduction to Computer Science</li>
+                            <li>DCIT 103 Office Productivity Tools</li>
+                            <li>MATH 121 Algebra and Trigonometry</li>
+                            <li>MATH 123 Vectors and Geometry</li>
+                            <li>STAT 111 Introduction to Statistics and Probability</li>                        
+                                       
+                    </p>
+                    <p>
+                      <h2>Second Semester</h2>
+                      <li>DCIT 102 Computer Hardware Fundamentals and Circuits</li>
+                      <li>DCIT 104 Programming Fundamentals</li>
+                      <li>MATH 122 Calculus I</li>
+                      <li>MATH 126 Algebra and Geometry</li>                      
+                      <li>STAT 112 Introduction to Statistics and Probability II</li>
+                      <li>UGRC 150 Critical Thinking and Practical Reasoning</li>
+                     
+
+                    </p>
+                </div>
+                <button type="button" class="collapsible">
+                    Level 200
+                </button>
+                <div class="content">
+                    <p>
+                        <h2>First Semester</h2>
+                        <li>UGRC 210 Academic Writing II</li>
+                        <li>DCIT 201 Programming I</li>
+                        <li>DCIT 203 Digital and Logic Systems Design</li>
+                        <li>DCIT 205 Multimedia and Web Design</li>
+                        <li>DCIT 207 Computer Organization and Architecture</li>                        
+                        <li>E-Business Architecture</li>
+                                        
+                           
+                
+                    </p>
+                    <p>
+                      <h2>Second Semester</h2>
+                      <li>UGRC 220 Introduction to African Studies</li>   
+                      <li>DCIT 202 Mobile Application Development</li>
+                      <li>DCIT 204 Data Structures & Algorithm I</li>
+                      <li>DCIT 206 Systems Administration</li>
+                      <li>DCIT 208 Software Engineering</li>
+
+                        
+                      <h2>Electives</h2>
+                      <li>DCIT 200 Internship</li>
+                      <li>DCIT 212 Numerical and Computational Methods</li>
+                      <li>DCIT 214 Information Modeling and Specification</li>
+
+                    </p>
+                </div>
+                <button type="button" class="collapsible">
+                     Level 300
+                </button>
+                <div class="content">
+                    <p>
+                        <h2>First Semester</h2>
+                        <li>DCIT 301 Operating Systems</li>
+                        <li>DCIT 303 Computer Networks</li>
+                        <li>DCIT 305 Database Fundamentals</li>
+                        <li>DCIT 313 Introduction to Artificial Intelligence</li>
+                        <li>DCIT 317 IT Project Management</li>
+                        Electives:
+                        <li>DCIT 307 Mini-Project</li>
+                        <li>DCIT 315 Principles of 3D Environment</li>
+                        <li>DCIT 321 Software Evolution</li>
+                    </p>
+                    <p>
+                        <h2>Second Semester</h2>
+                        <li>DCIT 302 Human Computer Interaction</li>
+                        <li>DCIT 304 Research Methods</li>
+                        <li>DCIT 308 Data Structures and Algorithms II</li>
+                        <li>DCIT 312 Information Security Management</li>
+                        <li>DCIT 318 Programming II</li>
+                        Electives:
+                        <li>DCIT 314 Game Engine Architecture</li>
+                        <li>DCIT 322 Database Management Administration</li>
+                    </p>
+                </div>
+                <button type="button" class="collapsible">
+                    Level 400
+                </button>
+                <div class="content">
+                    <p>
+                        <h2>First Semester</h2>
+                        <li>DCIT 400 Project</li>
+                        <li>DCIT 401 Social, Legal, Ethical and Professional Issues</li>
+                        <li>DCIT 407 Image Processing</li>
+
+                        <h2>Electives</h2>
+                        <li>DCIT 413 Play and Games</li>
+                        <LI>DCIT 415 Advanced Software Engineering</LI>
+                        <li>DCIT 419 Agile Methodss</li>
+                        <li>DCIT 421 Persuasive Systems Development</li>
+                        
+                                              
+                        
+                    </p>
+                    <p>
+                        <h2>Second Semester</h2>
+                        <li>DCIT 400 Project</li>
+                        <li>DCIT 402 Management Principles in Computing</li>
+                        <LI>DCIT 418 Systems and Network Security </LI>
+                        <LI>DCIT 428 Wireless Systems and Networks</LI>
+                        <h2>Electives</h2>
+                        <li>DCIT 404 Advanced Databases</li>
+                        <li>DCIT 406 Advanced Computer Networks</li>
+                    </p>
+                </div>
+            </div>
+           
+
+        </div>
+
         <div class="page-centre">
+
+            <P class="idk">
+                Use the Search bar below to find past papers.
+            </P>
             <input class="Searchbar" type="text" placeholder="Search for Past Papers">
         </div>
+
+        <div class="footer">
+            <div class="footer-left">
+            <p>
+                For more information, call us through the following numbers:
+            </p>
+            <p class="text3">
+                +233 501 382 035
+            </p>
+            <p class="text3">
+                +233 559 145 698
+            </p>
+            <p class="text3">
+                Email: dcs@ug.edu.gh
+            </p>
+            <p class="text4">
+             &#169; Copyright 2023
+            </p>
+        </div>
+
+        <div class="footer-right">
+            <p>
+                Locate us at:
+            </p>
+
+            <p>
+                University of Ghana, Legon Campus
+            </p>
+
+            <p>
+                Opposite the Mathematics Department.
+            </p>
+
+        </div>
+            
+        </div>
+
+    
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+        </script>
         
     </body>
 </html>
+
+
+
+
+                           

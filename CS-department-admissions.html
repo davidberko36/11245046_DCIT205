@@ -14,14 +14,17 @@
                 background-color: rgb(10,10,85);
                  color:white;
                  transition:opacity,0.3s;
-                 margin-left:500px;
+                 margin-left:800px;
+                 margin-top:0px;
+                 display:inline-block;
             }
 
             .lower-button:hover{
                 opacity:0.7;
+                cursor:pointer;
             }
             .lower-button:active{
-                opacity:0.3;
+                opacity:0.3;              
             }
 
             .dropdown {
@@ -48,10 +51,33 @@
             width:750px;
             }
 
-            .intro{
-                margin-left:200px;
-                font-size:30px;
-                width:900px;
+            .pic1{
+              margin-left:80px;
+              margin-top:40px;
+              width:500px;
+              display:inline-block;
+              vertical-align:top;
+            }
+
+            .why{
+              margin-left:70px;
+              margin-top:40px;
+              width:500px;
+              display:inline-block;
+              margin-bottom:0px;
+            }
+
+            .sub-heading{
+              margin-left:500px;
+              font-size:30px;
+              text-decoration:underline;
+            }
+
+            .info{
+              width:700px;
+              margin-top:50px;
+              margin-left:300px;
+              margin-bottom:80px;
             }
 
         </style>
@@ -70,18 +96,30 @@
                 Admissions
             </p>
         </div>
-        <div>
-            <img src="" class="">
-            <p class="intro">
-                 Welcome to the vibrant and innovative Computer Science Department at the University of Ghana,
-                 where limitless possibilities intersect with cutting-edge technology. 
-                 Our department prides itself on offering two dynamic undergraduate programs: the BSc. in Computer Science and the BSc. in Information Technology.
-                 Through a holistic approach to education, we foster an environment where theoretical understanding meets hands-on experience,
-                  equipping our students with the skills and knowledge needed to thrive in the ever-evolving world of technology.
-                 Join us as we explore the forefront of digital innovation, inspiring the next generation of tech leaders and problem solvers.
+
+        <p class="sub-heading">
+          Why Choose Us?
+        </p>
+    
+            <img src="Pictures/admissions-1.jpg" class="pic1">
+            <p class="why">
+              Choosing to pursue computer science at the University of Ghana offers a unique blend of academic excellence and cultural diversity. 
+              The program provides a solid foundation in computer science principles while embracing a vibrant learning environment that celebrates Ghana's rich heritage. 
+              With access to top-notch faculty, cutting-edge resources, and a supportive community, studying computer science at the University of Ghana promises a holistic 
+              education that combines theoretical knowledge with practical applications, preparing students for a dynamic and globally relevant career in technology.
+              <span class="find-below">Please find the admission requirements for both programmes below.</span>
             </p>
+      
             <button class="lower-button">Apply</button>
-        </div>
+
+
+            <p class="info">
+              The department runs a bachelor's programme in both Computer Science and Information Technology.
+              Students applying for information Technoloy are admitted straight into the department while students
+              applying for Computer Science are admitted into Mathematical Sciences initially, and then into Computer Science
+              after the first year based on performance.
+            </p>
+      
 
         <div>
           <p class="CourseTitle">
@@ -94,16 +132,21 @@
 
           <div class="content">
               <p>
-                Students must have taken the WASSCE and obtained an aggregate 10
+                Applicants must have taken the WASSCE and obtained an aggregate 10
                 with at least a B3 in Elective Mathematics.
+              </p>
+              <p>
+                Applicants must have obtained at least a C4 in Core Mathematics, English,
+                Social Studies, and Integrated Science
+              </p>
+              <p>
+                Successful students will be admitted into the Mathematical Science Programme
+                and be transitioned into Computer Science based on performance in the first year.
               </p>
              </div>
         </div>
         <div>
-            <p class="CourseTitle">
-              &#8226 <strong>Requirements For Admission</strong>
-            </p>
-  
+
             <button type="button" class="dropdown">
                 Information Technology
             </button>
@@ -117,9 +160,43 @@
           </div>
 
           <div class="footer">
+            <div class="footer-left">
+            <p>
+                For more information, call us through the following numbers:
+            </p>
+            <p class="text3">
+                +233 501 382 035
+            </p>
+            <p class="text3">
+                +233 559 145 698
+            </p>
+            <p class="text3">
+                Email: dcs@ug.edu.gh
+            </p>
+            <p class="text4">
+             &#169; Copyright 2023
+            </p>
+        </div>
+
+        <div class="footer-right">
+            <p>
+                Locate us at:
+            </p>
+
+            <p>
+                University of Ghana, Legon Campus
+            </p>
+
+            <p>
+                Opposite the Mathematics Department.
+            </p>
+
+        </div>
             
-          </div>
-  
+        </div>
+        
+         
+      
 
         <script>
             var coll = document.getElementsByClassName("dropdown");
