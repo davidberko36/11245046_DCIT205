@@ -39,6 +39,7 @@ To view the website locally:
 
 ## Home Page
 
+![Home-page](https://github.com/davidberko36/11245046_DCIT205/blob/main/Alumni.jpeg)
 
 
 
